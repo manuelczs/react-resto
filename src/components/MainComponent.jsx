@@ -66,11 +66,12 @@ class Main extends Component {
 }
 
 const mapStateToProps = (state) => {
+  const { dishes, comments, promotions, leaders } = state;
   return {
-    dishes: state.dishes,
-    comments: state.comments,
-    promotions: state.promotions,
-    leaders: state.leaders,
+    dishes,
+    comments,
+    promotions,
+    leaders,
   };
 };
 
